@@ -1,0 +1,9 @@
+<h1><%= @post.title %></h1>
+<ul>
+  <li>URL: <%= @post.url %></li>
+  <li>Content: <%= @post.content %></li>
+  <li>Author: <%= @post.author.username %></li>
+</ul>
+
+<%= link_to "Edit post", edit_post_url(@post) %>
+<%= button_to "Delete post", post_url(@post), method: :delete %>
